@@ -1,0 +1,100 @@
+/* For Tablets */
+@media all and (max-width: 1000px) {
+
+  .container-nav {
+    width: 100%;
+  }
+
+  .home-content {
+    margin: auto;
+  }
+
+  .home {
+    height: 100vh;
+  }
+
+  .main-bg {
+    width: fit-content;
+    padding: 3em 0em;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container-profile {
+    margin: 0px 1em 2em 2em;
+    height: 25em;
+    width: 15em;
+  }
+
+   .profile-picture {
+    height: 15em;
+    width: 100%;  
+  }
+
+  footer img {
+    display: block;
+    width: 15em;
+    margin: auto;
+  }
+
+  footer p {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+}
+  
+/* For Smartphones */
+@media all and (max-width: 670px) {
+
+  .container-nav {
+    width: 100%;
+  }
+
+  .home-content {
+    margin: auto;
+  }
+
+  .home {
+    height: 100vh;
+  }
+
+  .header-right {
+    display: none;
+  }
+  
+  .main-bg {
+    padding: 3em 0em;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .container-profile {
+    margin: 0px 2em 2em 2em;
+  }
+
+   .profile-picture {
+    height: 20em;
+    width: 100%;  
+  }
+
+  footer img {
+    display: block;
+    width: 15em;
+    margin: auto;
+  }
+
+  footer p {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2em;
+  }
+
+}
+
+
+/* @media only screen and (max-width: 600px) {
+  
+} */
+

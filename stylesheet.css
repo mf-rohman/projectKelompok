@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* body {
+    margin: 0;
+    font-family: "Lucida Grande";
+} */
+
+
+.container-nav {
+    /* max-width: 1170px; */
+    background-color: rgb(0, 128, 128, 0.9);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    width: 90px;
+    margin: 14px 0px;
+}
+
+.header-left {
+    float: left;
+    margin-left: 25px;
+}
+
+.header-right {
+    float: right;
+    margin-right: 25px;
+}
+
+.header-right a {
+    font-family: Ubuntu, sans-serif;
+    line-height: 75px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    transition: all 0.5s;
+}
+
+.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    display: none;
+}
+
+.header-right a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.home {
+    display: flex;
+    background: url(image/Kelompok-A301.png) no-repeat center;
+    background-size: cover;
+    /* margin-top: 25px; */
+}
+
+.home-content {
+    color: aliceblue;        
+    opacity: 0.5;
+    
+}
+
+
+.text-1 {
+    font-family: Ubuntu, sans-serif;
+    font-size: 30px;
+    padding-bottom: 3px;
+    color: lightseagreen;
+    /* margin-left: 10px; */
+    font-size: 40px;
+    color: #000;
+    /* border-bottom: 1.8px solid rgba(127, 131, 131, 0.089); */
+    background: linear-gradient(to right, #fff 20%, #65c7f7 40%, #0052D4 60%, #fff 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    text-fill-color: transparent !important;
+    animation: animate 1.7s linear infinite;
+}
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+
+.text-2 {
+    font-family: Ubuntu;
+    font-size: 55px;
+    letter-spacing: 0.5pc;
+    word-spacing: 0.5pc;
+    padding-top: 3px;
+    color: snow;
+     /* margin-left: 10px; */
+     font-size: 40px;
+     color: #000;
+     /* border-bottom: 1.8px solid rgba(127, 131, 131, 0.089); */
+     background: linear-gradient(to right, #fff 20%, #0bbdd4 40%, #065a81 60%, rgb(191, 238, 238) 80%);
+     background-size: 200% auto;
+     background-clip: text;
+     -webkit-background-clip: text !important;
+     -webkit-text-fill-color: transparent !important;
+     text-fill-color: transparent !important;
+     animation: animate 2.5s linear infinite;
+}
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+
+.text-2 span {
+    color: lightskyblue;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+}
+
+main {
+    display: flex;
+}
+
+.container-profile {
+
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px 7px rgba(255, 255, 255, 0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    opacity: 0.978;
+    overflow: hidden;
+}
+
+.profile {
+
+    transition: .5s;
+}
+
+.profile-picture {
+
+    object-fit: cover
+}
+
+.profile-text {
+
+    background: #fff;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-text #name {
+    
+    display: flex;
+}
+/* Add animasi */
+
+
+.profile-key {
+        
+    
+    text-align: justify;
+    font-size: .8rem;
+    color: #6e6e6e;
+    transition: .5s;
+}
+
+.profile-text span {
+    display: block;
+    transition: .7 cubic-bezier(.75, -1, 0, 1.15);
+}
+
+.profile-text span:nth-child(1) {
+    transform: translateX(-240px);
+}
+
+.profile-text span:nth-child(2) {
+    transform: translateX(240px);
+}
+
+.profile-links {
+
+    display: flex;
+    align-items: center;
+    letter-spacing: .5pc;
+    
+}
+
+.profile-links a {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    color: #0077b5;
+    transition: .7s cubic-bezier(.75s, -1, 0, 1.15);
+}
+
+.profile-links a :nth-child(1) {
+    background-color: #dd2a7b;
+    transform: translateX(-200px)
+}
+
+.profile-links a :nth-child(2) {
+    background: #26242e;
+    transform: translateY(200px);
+}
+
+.profile-links a :nth-child(3) {
+    background: #0077b5;
+    transform: translateX(200px);
+}
+
+.container-profile:hover .profile-text {
+    transform: translateY(-60px)
+}
+
+.container-profile:hover .profile {
+    transform: translateY(-70), scale(1.1);
+}
+
+.container-profile:hover .profile-text #name span {
+    transform: translateX(0);
+    transition-delay: .5s;
+}
+
+.container-profile:hover .profile-content {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+
+.container-profile:hover .profile-links a {
+    transform: translate(0, 0);
+    transition-delay: .5s;
+}
+
+.main-bg {
+    background-color: #021426d9;
+    background-image: linear-gradient(0deg, #0b476f 0%, #041825 100%);
+}
+
+footer p {
+    font-family: Ubuntu, sans-serif;
+    color:#616161;
+    font-size:12px;
+
+}
+
+@media all and (min-width: 1000px) {
+  
+    .container-nav {
+        /* max-width: 1170px; */
+        padding: 0 15px;
+        margin: 0 auto;
+        height: 75px;
+        width: 100%;
+    }
+    
+    /* Home style */
+    .home {
+        height: 36em;
+        width: 100%
+    }
+    
+    .home-content {
+        margin: auto;
+        margin-left: 18em;
+    }
+          
+    
+    main {
+        padding: 5em 5em;
+    }
+    
+    /* main style */
+    .container-profile {
+
+        margin: 20px;
+        width: 280px;
+        height: 450px;
+
+    }
+    
+    .profile {
+
+        width: 100%;
+        height: 60%;
+    }
+    
+    .profile-picture {
+        height: 100%;
+        width: 100%;
+
+    }
+    
+    .profile-text {
+
+        width: 100%;
+        height: 200%;
+        bottom: 0;
+
+    }
+    
+    .profile-text #name {
+        margin: 10px 0px;
+
+    }
+    
+    .profile-key {
+        
+        margin-top: auto;
+        padding: 5px;
+        
+    }
+    
+    .profile-key p {
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    
+    .profile-text span {
+        margin: 2px;
+    }
+        
+    .profile-links {
+
+        margin-top: 10px;
+        margin-left: 2px;
+
+    }
+    
+    .profile-links a {
+
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    
+    /* Main Styles */
+
+    
+    footer {
+        height: 15em;
+        padding-top:30px;
+    }
+    
+    footer .container {
+        padding :0px 15em;
+    }
+    
+    footer img {
+        width: 15em;
+        margin-bottom: 2em;
+    }
+      
+    footer p {
+
+        margin-bottom: 5em;
+    }
+      
+}
